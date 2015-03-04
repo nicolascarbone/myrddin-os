@@ -1,0 +1,8 @@
+ 
+apt-get install bochs bochs-x bochs-wx
+
+
+sudo bochs
+
+en la consola de bochs
+c <enter>
