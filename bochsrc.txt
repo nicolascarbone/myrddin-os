@@ -1,6 +1,6 @@
 # ROM and VGA BIOS images ---------------------------------------------
-romimage:    file=/usr/share/bochs/BIOS-bochs-latest, address=0xf0000 
-vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest 
+romimage:    file=/usr/share/bochs/BIOS-bochs-latest #, address=0xf0000 
+#vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest 
  
 # boot from floppy using our disk image -------------------------------
  
