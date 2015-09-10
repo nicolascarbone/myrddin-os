@@ -1,0 +1,15 @@
+ 
+apt-get install bochs bochs-x bochs-wx
+
+
+sudo bochs
+
+en la consola de bochs
+c <enter>
+
+#sudo dd if=floppy.img bs=512 of=/dev/fd0
+#sudo dd if=boot.bin bs=512 of=/dev/fd0
+
+dd if=boot.bin of=floppy-boot.img
+sudo bochs -f bochsrc.txt 
+

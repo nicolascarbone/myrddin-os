@@ -1,0 +1,6 @@
+./nasm -f elf32 boot/boot.asm -o boot.o
+gcc -m32 -c kernel/kernel.c -o kernel.o
+gcc -m32 -c screen/screen.c -o screen.o
+gcc -m32 -c console/console.c -o console.o
+ld -m elf_i386 -T link.ld -o kernel-0.01 boot.o screen.o console.o kernel.o
+qemu-system-i386 -kernel kernel-0.01
